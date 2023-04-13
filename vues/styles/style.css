@@ -1,0 +1,252 @@
+/** {
+    border: 2px solid red;
+}*/
+
+html {
+    background-color: brown;
+    font-family:sans-serif;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+.bouton_menu {
+    background-color: black;
+    color:white;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px;
+    margin-top: 10px;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 10px;
+}
+
+h1 {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 100px;
+    margin-bottom: 50px;
+    border: 6px solid black;
+    padding: 5px;
+    text-transform: uppercase;
+    border-radius: 10px;
+    width: fit-content;
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+}
+
+button, .attaques input, .bouton_defense {
+    text-transform: uppercase;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+    border:none;
+}
+
+.bouton:hover {
+    border-radius: 10px;
+    background-color: rgb(15, 15, 15);
+}
+
+input, select, label {
+    margin: 5px;
+}
+
+select {
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.home, .ajout, .supprimer, .liste{
+    margin: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20vw;
+
+}
+
+/* Page Home */
+
+.home > ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+}
+
+.home > ul > li {
+    margin: auto;
+    background-color: black;
+    border-radius: 10px;
+    margin: 5px;
+    list-style: none;
+    width: 350px;
+}
+
+.home > ul > li > a {
+    text-decoration: none;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    color:white;
+    padding: 10px;
+    width: auto;
+    height: 100%;
+}
+
+/* Page Creation, Suppression et Liste */
+
+.ajout > form, .supprimer > form {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.bouton_supprimer {
+    margin-top: 60px;
+}
+
+.liste {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: fit-content;
+    list-style: none;
+    padding-inline-start: 0px;
+}
+
+/* Page Combat */
+
+.ring {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.ring_liste {
+    align-self: flex-start;
+
+}
+
+
+.combat > form {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.combat > p {
+    display: flex;
+    justify-content: center;
+}
+
+.combat_liste, .combat_faiblesse, .combat {
+    min-width: 22vw;
+}
+
+.combat_faiblesse > table{
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+td {
+    border: 2px solid black;
+    padding: 5px;
+    margin: 0px;
+}
+
+
+.incombat {
+    display: flex;
+    flex-direction: column;
+}
+
+.zone_combat {
+    margin-left: auto;
+    margin-right: auto;
+    width: 15%;
+}
+
+.combattant {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 50%;
+}
+
+.combattant > p, .adversaire > p{
+    margin-top: 0px;
+    margin-bottom:3px;
+}
+
+.adversaire {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    width: 50%;
+    height: 50%;
+}
+
+.adversaire > .carractere{
+    margin-left: auto;
+}
+.adversaire > p{
+    margin-left: auto;
+    margin-right: 0px;
+    
+}
+
+.carractere {
+    border: 2px solid black;
+    height: 8vh;
+    width: 45%;
+    margin: 5px;
+}
+
+
+.attaques {
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.bouton_defense {
+    display: flex;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.efficace{
+    margin: 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Barre de vie */
+
+.barreDeVieFond {
+    background-color: black;
+    border-radius: 20px;
+}
+
+.vie {
+    display: flex;
+    justify-content: space-between;
+    background-color: green;
+    color: rgb(0, 0, 0);
+    padding: 5px;
+    font-size: 20px;
+    border-radius: 20px;
+}
