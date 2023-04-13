@@ -4,7 +4,6 @@ require 'pouvoirs.php';
 // Connexion à la BDD
 
     $login = "root";
-    $password = "Azerty01*";
     try {
         $bdd = new PDO("mysql:host=localhost;dbname=combattants;charset=utf8mb4", $login);
     }
